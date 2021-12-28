@@ -1,0 +1,11 @@
+<nb-alert status="success" *ngIf="showAlert" closable (close)="onClose()">
+  You have been successfully authenticated!
+</nb-alert>
+<div *ngIf="socialAuthServive.authState | async as socialUser">
+  <p>Hello, {{socialUser.name}}!</p>
+  <br>
+  <p>Your email: {{socialUser.email}}</p>
+  <br>
+  <button nbButton status="success" class="login-btn" (click)="logout()">Logout</button>
+</div>
+
