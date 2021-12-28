@@ -1,0 +1,26 @@
+<nb-card>
+  <nb-card-header>Login</nb-card-header>
+  <nb-card-body class="example-items-col">
+    <nb-form-field>
+      <input type="email" nbInput fullWidth placeholder="Enter mail">
+      &nbsp;
+      &nbsp;
+      <input type="password" nbInput fullWidth placeholder="Enter passcode">
+    </nb-form-field>
+  </nb-card-body>
+  <nb-card-footer>
+    <button nbButton status="success" class="login-btn">Login</button>
+  </nb-card-footer>
+</nb-card>
+
+&nbsp;
+&nbsp;
+
+<div class="button-group">
+  <nb-button-group>
+    <button nbButton>
+      <img src="../../assets/google-logo.png" height="20" width="20">
+    </button>
+    <button nbButton (click)="loginWithGoogle()">Sign in with google</button>
+  </nb-button-group>
+</div>
